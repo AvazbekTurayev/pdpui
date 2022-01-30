@@ -10,8 +10,19 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("UI",style: TextStyle(fontSize: 25),),
+        centerTitle: true,
+      ),
       body: Center(
-        child: Text("home"),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("User",style: TextStyle(color: Colors.red,fontSize: 35),),
+            SizedBox(width: 10,),
+            Text("Interface",style: TextStyle(color: Colors.blueAccent,fontSize: 35),),
+          ],
+        ),
       ),
     );
   }
